@@ -1,0 +1,119 @@
+<!DOCTYPE html>
+<html lang="id">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>Rahma Putri Dwi Swasti - Portfolio</title>
+  <link rel="stylesheet" href="style.css" />
+  <link rel="preconnect" href="https://fonts.googleapis.com" />
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+  <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;600&family=Playfair+Display:wght@600;700&display=swap" rel="stylesheet" />
+  <script>
+    function toggleMenu() {
+      const nav = document.getElementById('navMenu');
+      nav.classList.toggle('show');
+    }
+  </script>
+</head>
+
+<body>
+  <header>
+    <h1>PORTFOLIO</h1>
+    <button class="hamburger" onclick="toggleMenu()">☰</button>
+    <nav id="navMenu">
+      <a href="#about" class="nav-link">Tentang Saya</a>
+      <a href="#experience" class="nav-link">Pengalaman Kerja</a>
+      <a href="#project" class="nav-link">Proyek</a>
+      <a href="#contact" class="nav-link button">Hubungi Saya</a>
+    </nav>
+  </header>
+
+  <section class="hero-section">
+    <div class="hero-image" style="background-image: url('assets/foto.jpg');"></div>
+    <div class="hero-text">
+      <h2>Hallo, Saya Putri!</h2>
+      <p>Saya tertarik pada desain, teknologi, dan selalu berusaha menciptakan solusi sederhana yang efektif. Website ini adalah ruang digital saya untuk menunjukkan karya dan pengalaman saya.</p>
+    </div>
+  </section>
+
+  <section class="mock-section bg-coklat" id="about">
+    <div class="flex-row">
+      <div class="section-text">
+        <h2>Tentang Saya</h2>
+        <p>Saya adalah mahasiswa aktif D3 Sistem Informasi Universitas Pembangunan Nasional Veteran Jakarta. Saya menyukai desain, teknologi, serta pemecahan masalah melalui pendekatan visual. Saya juga pernah mempublikasikan jurnal ilmiah sebagai kontribusi akademik.</p>
+        <a href="https://conference.upnvj.ac.id/index.php/senamika/article/view/3093" target="_blank">Lihat Jurnal</a>
+        <a href="assets/CV_RahmaPutri.pdf" target="_blank">Lihat CV</a>
+      </div>
+    </div>
+  </section>
+
+  <section class="mock-section bg-hijau" id="experience">
+    <div class="flex-row reverse">
+      <div class="section-text">
+        <h2>Pengalaman Kerja yang Relevan</h2>
+        <p>Saya pernah menjual berbagai macam produk digital secara freelance. Meskipun belum bekerja formal di perusahaan desain, pengalaman ini membantu saya memahami dasar interaksi pengguna dan UI/UX. Saya percaya ini adalah bekal untuk membangun karir di bidang desain digital.</p>
+      </div>
+    </div>
+  </section>
+
+  <section class="mock-section bg-coklat" id="project">
+    <div class="flex-row">
+      <div class="section-text">
+        <h2>Proyek</h2>
+        <p>
+          Salah satu proyek saya adalah studi kasus dari mata kuliah Pengembangan Web yang berfokus pada fungsi sistem untuk mengelola barang, 
+          mulai dari pencatatan, pemantauan stok, hingga pelaporan secara sederhana namun efektif. 
+          Selain itu, saya juga pernah membuat proyek UI/UX Design untuk aplikasi manajemen keuangan menggunakan Figma 
+          yang dirancang untuk membantu pengguna mengatur keuangan mereka secara lebih terstruktur, 
+          serta UI/UX aplikasi pendeteksi perjalanan menggunakan Canva yang berfungsi untuk merekam perjalanan dan menyimpannya sebagai kenangan digital bagi pengguna. 
+          Saya juga pernah mencoba tools Marvel App untuk membuat UI/UX, meskipun bukan proyek yang besar, pengalaman ini membantu saya memahami alur prototyping secara lebih baik.
+        </p>
+        <a href="https://github.com/Rizz9y/UASPemwebFix" target="_blank">Proyek Pengembangan Web</a>
+        <a href="https://docs.google.com/document/d/11iaMMydxcu0Bnf0_ZkfjKHCymxoKSFZ60iX1u9LcBjQ/edit?usp=sharing" target="_blank">Artikel Proyek Pengembangan Web</a>
+        <a href="https://www.figma.com/design/MV8gKQyeDZviPW43EAsBsO/UI-Manajemen-Keuangan?node-id=301-73213&t=hY7iUMiXrEOzbyQx-1" target="_blank">Proyek UI/UX Figma</a>
+        <a href="https://www.canva.com/design/DAGTuC51KN8/N-bqv4XgpIqb1XijwZkNdw/edit?utm_content=DAGTuC51KN8&utm_campaign=designshare&utm_medium=link2&utm_source=sharebutton" target="_blank">Proyek UI/UX Canva</a>
+        <a href="https://marvelapp.com/prototype/10ic62ia/screen/95589756" target="_blank">UI/UX MarvelApp</a>
+      </div>
+    </div>
+  </section>
+
+  <section class="mock-section bg-hijau" id="contact">
+    <div class="flex-row reverse">
+      <div class="section-text">
+        <h2>Hubungi Saya</h2>
+        <p class="contact-info">Saya terbuka untuk peluang kerja, magang, ataupun kolaborasi di bidang sistem informasi, desain, dan teknologi.</p>
+        <p>📞 +62 856-9340-2528</p>
+        <p>📧 rahmadwiasti2@gmail.com</p>
+        <p>📍 Jl. Darusaadah Cinangka, Sawangan, Depok</p>
+      </div>
+    </div>
+  </section>
+
+  <footer>
+    <p>&copy; 2025 Rahma Putri Dwi Swasti</p>
+  </footer>
+
+  <script>
+    // Highlight menu aktif saat scroll
+    const sections = document.querySelectorAll('section');
+    const navLinks = document.querySelectorAll('.nav-link');
+
+    window.addEventListener('scroll', () => {
+      let current = '';
+      sections.forEach(section => {
+        const sectionTop = section.offsetTop - 100;
+        if (scrollY >= sectionTop) {
+          current = section.getAttribute('id');
+        }
+      });
+
+      navLinks.forEach(link => {
+        link.classList.remove('active');
+        if (link.getAttribute('href').includes(current)) {
+          link.classList.add('active');
+        }
+      });
+    });
+  </script>
+</body>
+</html>
